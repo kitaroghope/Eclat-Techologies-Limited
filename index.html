@@ -13,15 +13,33 @@
   <body class="bg-gray-100">
     <header class="bg-primary text-white py-4 shadow-lg">
       <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Brand Name -->
         <h1 class="text-2xl font-bold">Eclat Technologies Limited</h1>
-        <nav>
-          <ul class="flex space-x-6">
+    
+        <!-- Hamburger Menu for Mobile -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+    
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-6" id="nav-links">
+          <ul class="md:flex md:space-x-6">
             <li><a href="./index.html" class="btn btn-ghost">Home</a></li>
             <li><a href="about us/about.html" class="btn btn-ghost">About us</a></li>
             <li><a href="./services/services.html" class="btn btn-ghost">Services</a></li>
             <li><a href="./contacts/contact.html" class="btn btn-ghost">Contact us</a></li>
           </ul>
         </nav>
+      </div>
+    
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-primary w-full text-center py-4">
+        <ul class="space-y-4">
+          <li><a href="./index.html" class="block py-2">Home</a></li>
+          <li><a href="about us/about.html" class="block py-2">About us</a></li>
+          <li><a href="./services/services.html" class="block py-2">Services</a></li>
+          <li><a href="./contacts/contact.html" class="block py-2">Contact us</a></li>
+        </ul>
       </div>
     </header>
     
