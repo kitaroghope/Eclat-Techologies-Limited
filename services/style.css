@@ -1,0 +1,50 @@
+.nav{
+    height: 50px;
+    background-color: blue;
+    object-position: fixed;
+}
+.nav div{
+    display: flex;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    font-size: 20px;
+    color: beige;
+}
+.nav ul{
+    position: absolute;
+    right: 50px;
+}
+.nav ul li{
+    display: inline-block;
+} 
+.nav ul li a{
+    color: aliceblue;
+    padding: 5px;
+}
+.services-content{
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+.card-contianer ul{
+    padding: 0;
+
+}
+.card-contianer{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+}
+.card-contianer ul li{
+text-align: justify;
+}
+.services-content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+}
+.card-contianer ul li p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(21, 24, 18);
+}

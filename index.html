@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Company, home, Ecalt Technologies Limited" />
+    <meta name="author" content="Thomasmore" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ecalt Technologies Limited</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-primary text-white py-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">Eclat Technologies Limited</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="./index.html" class="btn btn-ghost">Home</a></li>
+            <li><a href="about us/about.html" class="btn btn-ghost">About us</a></li>
+            <li><a href="./services/services.html" class="btn btn-ghost">Services</a></li>
+            <li><a href="./contacts/contact.html" class="btn btn-ghost">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="container mx-auto py-8 px-4">
+      <section class="text-center">
+        <h2 class="text-3xl font-bold text-primary">Your Trusted Supplier for Office & Government Needs</h2>
+        <p class="text-lg text-gray-600 mt-2">Providing quality clothing, furniture, networking solutions, and scholastic materials.</p>
+      </section>
+      
+
+      <section class="carousel w-full max-w-4xl mx-auto mt-8 relative">
+        <div class="carousel-inner rounded-lg shadow-lg relative">
+            <img src="images/images (1).jpeg" class="w-full carousel-item" alt="1" />
+            <img src="images/images (2).jpeg" class="w-full carousel-item hidden" alt="2" />
+            <img src="images/images (5).jpeg" class="w-full carousel-item hidden" alt="5" />
+            <img src="images/images (6).jpeg" class="w-full carousel-item hidden" alt="6" />
+            <img src="images/images (7).jpeg" class="w-full carousel-item hidden" alt="7" />
+            <img src="images/images (8).jpeg" class="w-full carousel-item hidden" alt="8" />
+        </div>
+
+        <!-- Controls -->
+        <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full">❮</button>
+        <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full">❯</button>
+      </section>
+    </main>
+    
+    <section class="bg-white shadow-md p-6 max-w-2xl mx-auto mt-10 rounded-lg">
+      <h1 class="text-2xl font-bold text-primary">Contact Us</h1>
+      <p class="text-gray-700 mt-2">Eclat Technologies Limited <br />Plot No.---, Street Address <br />Naalya, Kampala-Uganda</p>
+      <h2 class="text-xl font-semibold mt-4">BUSUULWA KENNETH</h2>
+      <p class="text-gray-700">Co.Director</p>
+      <p class="font-bold mt-2">0200946335 <br />+265-77272-1117</p>
+      <p class="mt-4">For further enquiries, write to us at:</p>
+      <p class="text-primary font-semibold">eclattechnologiesltd@gmail.com</p>
+      <p class="text-primary font-semibold">busulwakeith3@gmail.com</p>
+    </section>
+    
+    <footer class="bg-primary text-white text-center py-4 mt-10">
+      &copy; 2025 Eclat Technologies Limited. All rights reserved.
+    </footer>
+  </body>
+  <script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll(".carousel-item");
+    const totalItems = items.length;
+
+    function showSlide(index) {
+        items.forEach((img, i) => {
+            img.classList.toggle("hidden", i !== index);
+        });
+    }
+
+    document.getElementById("prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        showSlide(currentIndex);
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        showSlide(currentIndex);
+    });
+
+    // Auto-play functionality
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        showSlide(currentIndex);
+    }, 3000); // Change image every 3 seconds
+  </script>
+</html>

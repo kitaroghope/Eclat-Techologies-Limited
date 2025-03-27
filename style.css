@@ -1,0 +1,92 @@
+ 
+ 
+ .nav{
+    height: 50px;
+    background-color: rgba(7, 7, 216, 0.884);
+    object-position: fixed;
+    border-radius: 15px;
+}
+.nav div{
+    display: flex;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    font-size: 20px;
+    color: beige;
+}
+.nav ul{
+    position: absolute;
+    right: 50px;
+}
+.nav ul li{
+    display: inline-block;
+} 
+.nav ul li a{
+    color: aliceblue;
+    padding: 5px;
+}
+.home{
+    background:url("") ;
+    
+}
+.contact-content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+}
+.contact-content .address-holder{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-content{
+    text-align: center;
+}
+
+
+.carousel{
+    margin: 0;
+    background: none;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+}
+.carousel{
+    overflow: hidden;
+    width: 1000px;
+    height: 40vh;
+    display: center;
+}
+.warp{
+    display: grid;
+    grid-auto-flow:column ;
+    grid-auto-columns: 230px;
+    justify-items: stretch;
+    animation: slide 20s linear infinite;
+}
+.warp img{
+    width: 200px;
+    height: 200px;
+    border: radius 10px;;
+    object-fit: cover;
+    align-items: space-between;
+}
+@keyframes slide{
+to{
+    translate: calc(-4* 300px);
+}
+}
+body{
+    background-color: rgb(235, 218, 163);
+    flex-wrap: wrap;
+}
+.contact-content{
+    text-align: center;
+}
+.main-content{
+     font-family: 'Times New Roman', Times, serif;
+     backface-visibility: hidden;
+     
+}

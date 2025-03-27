@@ -1,0 +1,40 @@
+.nav{
+    height: 50px;
+    background-color: rgba(7, 7, 216, 0.884);
+    object-position: fixed;
+    border-radius: 15px;
+}
+.nav div{
+    display: flex;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    font-size: 20px;
+    color: beige;
+}
+.nav ul{
+    position: absolute;
+    right: 50px;
+}
+.nav ul li{
+    display: inline-block;
+} 
+.nav ul li a{
+    color: aliceblue;
+    padding: 5px;
+}
+.home{
+    background:url("") ;
+    
+}
+.contact-content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+}
+.contact-content .address-holder{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-content{
+    text-align: center;
+}
